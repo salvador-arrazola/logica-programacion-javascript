@@ -1,7 +1,7 @@
 // Inicializamos el numero secreto con un valor especifico.
 let numeroSecreto = 6;
 // Solicitamos un numero al usuario.
-let numeroUsuario = prompt('Por favor, dame un numero entre el 1 y 10:');
+let numeroUsuario = prompt('Por favor, dame un número entre el 1 y 10:');
 
 // Usamos la consola para ver el numero secreto y el numero del usuario.
 console.log('Numero Secreto: '+ numeroSecreto);
@@ -9,5 +9,9 @@ console.log('Numero Usuario: '+ numeroUsuario);
 
 // Checamos si el numero del usuario es igual al numero secreto.
 if (numeroUsuario == numeroSecreto) {
-    alert('¡Felicidades!\nAdivinaste el Numero Secreto.');
+    // Si los numeros son iguales, felicitamos al usuario.
+    alert('¡Felicidades!\nAdivinaste el Número Secreto.');
+} else {
+    // Si no, si los numeros no son iguales, informamos al usuario.
+    alert('¡Lo siento!\nNo adivinaste el Número Secreto.');
 }
