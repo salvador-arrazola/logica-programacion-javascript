@@ -19,7 +19,6 @@ while (numeroUsuario != numeroSecreto) {
     // Usamos la consola para ver el numero secreto y el numero del usuario.
     console.log('numeroSecreto: '+ numeroSecreto);
     console.log('numeroUsuario: '+ numeroUsuario);
-    console.log('Tipo de dato de numeroUsuario: '+ typeof(numeroUsuario));
 
     // Checamos si el numero del usuario es igual al numero secreto.
     if (numeroUsuario == numeroSecreto) {
@@ -36,14 +35,17 @@ while (numeroUsuario != numeroSecreto) {
             break;
         }
 
+        // Calculamos el numero de intentos restantes.
+        let intentosRestantes = numeroMaximoIntentos - numeroIntentos;
+
         // Si el usuario no ha llegado al numero maximo de intentos,
         // checamos la relacion entre el numero secreto y el numero del usuario.
         if (numeroSecreto > numeroUsuario) {
             // Si el numero secreto es mayor al numero del usuario.
-            alert(`¡Lo siento!\nEl Numero Secreto es mayor a ${numeroUsuario}.`);
+            alert(`¡Lo siento!\nEl Numero Secreto es mayor a ${numeroUsuario}.\nTe quedan ${intentosRestantes} intentos.`);
         } else {
             // Si no, si el numero secreto es menor al numero del usuario.
-            alert(`¡Lo siento!\nEl Numero Secreto es menor a ${numeroUsuario}.`);
+            alert(`¡Lo siento!\nEl Numero Secreto es menor a ${numeroUsuario}.\nTe quedan ${intentosRestantes} intentos.`);
         }
     }
 
