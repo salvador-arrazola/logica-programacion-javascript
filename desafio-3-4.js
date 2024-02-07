@@ -1,5 +1,5 @@
 // 4. Crea un programa de cuenta regresiva.
-// Pide un número y cuenta desde ese numero hasta 0 utilizando un bucle 'while' en la consola del navegador.
+//    Pide un número y cuenta desde ese numero hasta 0 utilizando un bucle 'while' en la consola del navegador.
 
 // Inicializamos el contador y el numero del usuario.
 let contador = 0;

@@ -14,7 +14,7 @@ alert('¡Bienvenido al juego de Adivina el Numero Secreto!');
 while (numeroUsuario != numeroSecreto) {
 
     // Solicitamos un numero al usuario.
-    let numeroUsuario = prompt('Por favor, dame un número entre el 1 y 10:');
+    numeroUsuario = prompt('Por favor, dame un número entre el 1 y 10:');
 
     // Usamos la consola para ver el numero secreto y el numero del usuario.
     console.log('Numero Secreto: '+ numeroSecreto);
